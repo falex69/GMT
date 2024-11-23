@@ -11,3 +11,16 @@ url = "https://www.youtube.com/watch?v=" + re.search('(?<="videoId":").*?(?=")',
 print("1) Verification du dernier direct")
 print(f"   Video : {info}")
 print(f"   Liens {url}")
+
+choix = input("Voulez-vous publier ce liens [yes/no] ?")
+
+if choix == "yes":
+    print("2) Connexion")
+    l = input("Votre login ?")
+    p = input("votre p.....d ?")
+
+    andlil_login_url = "https://www.andlil.com/forum/ucp.php?mode=login&redirect=index.php"
+    r = requests.get(andlil_login_url).text
+    #print(r)
+else:
+    print("Goodbye!")
