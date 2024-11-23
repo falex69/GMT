@@ -22,5 +22,7 @@ if choix == "yes":
     andlil_login_url = "https://www.andlil.com/forum/ucp.php?mode=login&redirect=index.php"
     r = requests.get(andlil_login_url).text
     #print(r)
+elif choix == "no":
+    print("Ok !")
 else:
     print("Goodbye!")
