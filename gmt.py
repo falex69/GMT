@@ -9,5 +9,9 @@ html = requests.get(channel + "/videos").text
 info = re.search('(?<={"label":").*?(?="})', html).group()
 url = "https://www.youtube.com/watch?v=" + re.search('(?<="videoId":").*?(?=")', html).group()
 
-print(info)
-print(url)
+#print(info)
+#print(url)
+
+print("1) Verification du dernier direct")
+print(f"   Video : {info}")
+print(f"   Liens {url}")
